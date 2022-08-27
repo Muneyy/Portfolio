@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { IconContext } from "react-icons";
-import { AiFillHtml5 } from "react-icons/ai";
-import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb } from "react-icons/si";
+import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython } from "react-icons/si";
 
 const HeaderContainer = styled.div`
-   height: 100vh;
    background-color: #483838;
    color: white;
    display: flex;
-   flex-flow: column wrap;
+   flex-flow: column nowrap;
    gap: 66px;
+   /* height: 100vh; */
+   padding-bottom: 8em;
    
 `
 
@@ -19,6 +19,7 @@ const HeaderName = styled.h2`
     font-size: 5rem;
     font-weight: 300;
     padding-left: 5px;
+    transform: translate(0, 20%);
 `
 
 const HeaderText = styled.h1`
@@ -35,12 +36,13 @@ const HeaderTitle = styled.div`
 
 const HeaderTechnologies = styled.div`
     border: 5px solid #90B77D;
-    margin: 0 25rem;
+    margin: 0 auto;
     padding: 40px 60px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
+    max-width: 1000px;
 `
 
 const HeaderTechnologiesTitle = styled.h1`
@@ -55,6 +57,25 @@ const HeaderTechnologiesList = styled.ul`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    li > span {
+        position: absolute;
+        top: -30%;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    li:hover > span {
+        opacity: 1;
+        transform: translate(0, -10%);
+    }
 `
 
 
@@ -73,7 +94,6 @@ const Intro = () => {
                     <HeaderText>
                         FRONT END<br></br>DEVELOPER
                     </HeaderText>
-                    
                 </motion.div>
             </HeaderTitle>
             <IconContext.Provider value={ {size: "4.5rem", color: "#D2D79F"} }>
@@ -84,17 +104,45 @@ const Intro = () => {
                 >
                 <HeaderTechnologies>
                     <HeaderTechnologiesTitle>
-                        Technologies:
+                        Technologies
                     </HeaderTechnologiesTitle>
                     <HeaderTechnologiesList>
-                            <SiHtml5 />
-                            <SiCss3 />
-                            <SiGithub />
-                            <SiWebpack />
-                            <SiJavascript />
-                            <SiTypescript />
-                            <SiReact />
-                            <SiStyledcomponents />
+                            <li>
+                                <span>HTML 5</span>
+                                <SiHtml5 />
+                            </li>
+                            <li>
+                                <span>CSS 3</span>
+                                <SiCss3 />
+                            </li>
+                            <li>
+                                <span>GitHub</span>
+                                <SiGithub />
+                            </li>
+                            <li>
+                                <span>Webpack</span>
+                                <SiWebpack />
+                            </li>
+                            <li>
+                                <span>JavaScript</span>
+                                <SiJavascript />
+                            </li>
+                            <li>
+                                <span>TypeScript</span>
+                                <SiTypescript />
+                            </li>
+                            <li>
+                                <span>React</span>
+                                <SiReact />
+                            </li>
+                            <li>
+                                <span>Styled Components</span>
+                                <SiStyledcomponents />
+                            </li>
+                            <li>
+                                <span>Python</span>
+                                <SiPython />
+                            </li>
                     </HeaderTechnologiesList>
                 </HeaderTechnologies>
                 </motion.div>

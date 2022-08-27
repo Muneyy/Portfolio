@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Intro from './Components/Intro';
+import About from './Components/About';
+import Projects from './Components/Projects';
 
 const HeaderText = styled.div`
   font-size: 16px;
@@ -13,6 +15,8 @@ function App() {
   return (
     <div className="App">
         <Intro />
+        <About />
+        <Projects />
     </div>
   );
 }
