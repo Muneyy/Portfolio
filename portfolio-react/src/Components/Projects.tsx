@@ -8,7 +8,7 @@ const uniqid = require('uniqid');
 
 
 const Container = styled.div`
-    background-color: #483838;
+    background-color: #313132;
     color: white;
     display: flex;
     flex-direction: column;

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Project = styled.div`
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    max-width: 1400px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
 `
 
 const ProjectText = styled.div`
@@ -14,21 +14,25 @@ const ProjectText = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 80%;
-    border: 3px solid #D2D79F;
+    max-width: 40%;
+    /* border: 3px solid #D2D79F; */
     border-radius: 10px;
     padding: 40px;
-    background-color: #42855B;
+    background-color: #1D1D1F;
+    left: 10%;
+    position: absolute;
+    z-index: 2;
 `
 
 const ProjectTitle = styled.h1`
-    font-size: 3rem;
+    font-size: 2rem;
 `
 
 const ProjectDescription = styled.p`
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 16px;
-    opacity: 0.9;
+    opacity: 0.8;
+    font-weight: 350;
 `
 const ProjectLinks = styled.div`
     display: flex;
@@ -52,7 +56,7 @@ const ProjectButton = styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  height: 30px;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -68,7 +72,7 @@ const ProjectButton = styled.button`
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
+  font-size: 0.9rem;
 
     &:focus {
         box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
@@ -89,9 +93,10 @@ const ProjectButton = styled.button`
 const ProjectImage = styled.div`
     padding: 20px;
     img {
-        width: 800px;
+        max-width: 1200px;
         height: auto;
         background-size: contain;
+        opacity: 0.7;
 
     }
 `

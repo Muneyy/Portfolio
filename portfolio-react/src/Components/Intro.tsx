@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython, SiLinux } from "react-icons/si";
 
 const HeaderContainer = styled.div`
-   background-color: #483838;
+   background-color: #313132;
    color: white;
    display: flex;
    flex-flow: column nowrap;
@@ -35,18 +35,19 @@ const HeaderTitle = styled.div`
 `
 
 const HeaderTechnologies = styled.div`
-    border: 5px solid #90B77D;
-    margin: 0 auto;
-    padding: 40px 60px;
+    /* border: 3px solid #90B77D; */
     border-radius: 10px;
+    background-color: #1D1D1F;
+    margin: 0 auto;
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    max-width: 1000px;
+    gap: 30px;
+    max-width: 800px;
 `
 
 const HeaderTechnologiesTitle = styled.h1`
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
 `
 
@@ -67,9 +68,10 @@ const HeaderTechnologiesList = styled.ul`
 
     li > span {
         position: absolute;
-        top: -30%;
+        top: -40%;
         opacity: 0;
         transition: 0.3s;
+        font-size: 0.8rem;
     }
 
     li:hover > span {
@@ -96,7 +98,7 @@ const Intro = () => {
                     </HeaderText>
                 </motion.div>
             </HeaderTitle>
-            <IconContext.Provider value={ {size: "4.5rem", color: "#D2D79F"} }>
+            <IconContext.Provider value={ {size: "3.5rem", color: "#D2D79F"} }>
                 <motion.div
                     initial = { { opacity: 0 } }
                     animate = { { opacity: 1 } }
