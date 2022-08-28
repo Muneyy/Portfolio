@@ -1,8 +1,8 @@
 const titleList: string[] = ['Shopping Cart', 
                              'CV Creator',
                              'To-Do List',]
-const descList: string[] = ['A Pokemon-themed shopping cart project built with TypeScript and React with data fetched from PokeAPI using async functions and promises.',
-                            'A responsive curriculum vitae creator built with React',
+const descList: string[] = ['A Pokemon-themed shopping cart project built with TypeScript, React and React-Router with data fetched from RESTful PokeAPI using async functions and promises',
+                            'A responsive curriculum vitae creator built with React using only class components',
                             'A To-Do List implemented built with HTML, CSS, and Vanilla JS that utilizes client-side local storage',
                             ]
 const linkCodeList: string[] = ['https://github.com/Muneyy/TOP-shopping-cart',

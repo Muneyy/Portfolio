@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import ProjectItem from './SubComponents/Project';
 import ProjectList from './ProjectList';
+const uniqid = require('uniqid');
+
 
 
 const Container = styled.div`
-    background-color: #3F4E4F;
+    background-color: #483838;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,6 +32,20 @@ type ProjectObject = {
     imgSrc: string,
 }
 
+const projectVariants: Variants = {
+    offscreen: {
+        opacity:0,
+        y: 50
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        ease: "linear"
+      }
+    }
+  };
+
 const Projects = () => {
 
     return (
@@ -40,13 +56,21 @@ const Projects = () => {
                 // @ts-ignore */}
             {ProjectList.map((project: ProjectObject) => {
                 return (
-                        <ProjectItem
-                            title = {project.title}
-                            desc = {project.desc}
-                            linkCode = {project.linkCode}
-                            linkLive = {project.linkLive}
-                            imgSrc = {project.imgSrc}
-                        />
+                        <motion.div 
+                            initial = "offscreen"
+                            whileInView= "onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+                            id = {uniqid()}
+                            variants = {projectVariants}
+                        >
+                            <ProjectItem
+                                title = {project.title}
+                                desc = {project.desc}
+                                linkCode = {project.linkCode}
+                                linkLive = {project.linkLive}
+                                imgSrc = {project.imgSrc}
+                            />
+                        </motion.div>
                 )
             })}
             </>

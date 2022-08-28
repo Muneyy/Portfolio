@@ -15,6 +15,10 @@ const ProjectText = styled.div`
     flex-direction: column;
     gap: 8px;
     width: 80%;
+    border: 3px solid #D2D79F;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #42855B;
 `
 
 const ProjectTitle = styled.h1`
