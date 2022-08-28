@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { IconContext } from "react-icons";
-import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython } from "react-icons/si";
+import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython, SiLinux } from "react-icons/si";
 
 const HeaderContainer = styled.div`
    background-color: #483838;
@@ -114,6 +114,10 @@ const Intro = () => {
                             <li>
                                 <span>CSS 3</span>
                                 <SiCss3 />
+                            </li>
+                            <li>
+                                <span>Linux</span>
+                                <SiLinux />
                             </li>
                             <li>
                                 <span>GitHub</span>
