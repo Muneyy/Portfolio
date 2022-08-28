@@ -96,7 +96,7 @@ const ProjectImage = styled.div`
         max-width: 1200px;
         height: auto;
         background-size: contain;
-        opacity: 0.7;
+        opacity: 0.6;
 
     }
 `

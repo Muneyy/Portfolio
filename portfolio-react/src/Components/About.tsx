@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 
 const Header = styled.div`
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     border-bottom: 5px solid #E6B325;
     margin-bottom: 60px;
@@ -27,7 +27,7 @@ const Content = styled.div`
 `
 
 const ContentText = styled.p`
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 `
 

@@ -18,7 +18,7 @@ const Container = styled.div`
 `
 
 const Header = styled.div`
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     border-bottom: 5px solid #42855B;
     margin-bottom: 60px;
