@@ -5,8 +5,6 @@ import ProjectItem from './SubComponents/Project';
 import ProjectList from './ProjectList';
 const uniqid = require('uniqid');
 
-
-
 const Container = styled.div`
     background-color: #313132;
     color: white;
@@ -20,7 +18,7 @@ const Container = styled.div`
 const Header = styled.div`
     font-size: 4rem;
     font-weight: 700;
-    border-bottom: 5px solid #42855B;
+    /* border-bottom: 5px solid #42855B; */
     margin-bottom: 60px;
 `
 
@@ -50,7 +48,15 @@ const Projects = () => {
 
     return (
         <Container>
+            <motion.div 
+                            initial = "offscreen"
+                            whileInView= "onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+                            id = {uniqid()}
+                            variants = {projectVariants}
+            >
             <Header>Projects</Header>
+            </motion.div>
             <>
             {/*
                 // @ts-ignore */}

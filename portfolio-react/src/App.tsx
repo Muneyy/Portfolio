@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Intro from './Components/Intro';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import './index'
 
 const HeaderText = styled.div`
   font-size: 16px;
