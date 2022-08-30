@@ -6,6 +6,7 @@ const Project = styled.div`
     display: flex;
     flex-flow: row wrap;
     position: relative;
+    margin: auto;
 `
 
 const ProjectText = styled.div`
@@ -94,10 +95,11 @@ const ProjectButton = styled.button`
 const ProjectImage = styled.div`
     padding: 20px;
     img {
-        max-width: 1200px;
+        width: 1200px;
         height: auto;
         background-size: contain;
         opacity: 0.6;
+        padding: auto;
 
     }
 `

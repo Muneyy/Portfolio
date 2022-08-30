@@ -54,7 +54,7 @@ const About = () => {
             viewport={{ once: true, amount: 0.8 }}
             variants = {projectVariants}
         >
-        <Container>
+        <Container id='about'>
             <Header>About Me</Header>
             <Content>
                 <ContentText>

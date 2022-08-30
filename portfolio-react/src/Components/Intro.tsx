@@ -83,7 +83,7 @@ const HeaderTechnologiesList = styled.ul`
 
 const Intro = () => {
     return (
-        <HeaderContainer>
+        <HeaderContainer id='home'>
             <HeaderTitle>
                 <motion.div
                     initial = { { opacity: 0, y: -20 } }

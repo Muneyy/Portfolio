@@ -47,7 +47,7 @@ const projectVariants: Variants = {
 const Projects = () => {
 
     return (
-        <Container>
+        <Container id='projects'>
             <motion.div 
                             initial = "offscreen"
                             whileInView= "onscreen"
@@ -57,7 +57,6 @@ const Projects = () => {
             >
             <Header>Projects</Header>
             </motion.div>
-            <>
             {/*
                 // @ts-ignore */}
             {ProjectList.map((project: ProjectObject) => {
@@ -79,7 +78,6 @@ const Projects = () => {
                         </motion.div>
                 )
             })}
-            </>
         </Container>
     )
 }
