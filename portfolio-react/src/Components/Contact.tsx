@@ -10,13 +10,24 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
     padding-bottom: 5rem;
+
+    @media screen and (max-width: 800px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
 `
 
 const Header = styled.div`
     font-size: 4rem;
     font-weight: 700;
-    padding-top: 5rem;
+    
+
+    @media screen and (max-width: 800px) {
+        font-size: 3rem;
+    }
 `
 
 const EmailHeader = styled.div`
@@ -24,6 +35,16 @@ const EmailHeader = styled.div`
     padding-top: 5rem;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
+
+    @media screen and (max-width: 800px) {
+        font-size: calc(1rem + 1.5vw);
+        padding-top: 2rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
+    }
+
 `
 
 const ButtonLinks = styled.div`

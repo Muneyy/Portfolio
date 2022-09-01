@@ -8,11 +8,6 @@ import './index'
 import Contact from './Components/Contact';
 import Nav from './Components/Nav';
 
-const HeaderText = styled.div`
-  font-size: 16px;
-  color: blue;
-`
-
 function App() {
   
   return (

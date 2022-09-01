@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
 
 const Container = styled.div`
-    width: 99vw;
+    width: 100vw;
     background-color: #1d1d1f;
     height: 40px;
     color: white;
@@ -12,6 +12,10 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     z-index: 3;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `
 
 const Content = styled.div`
@@ -19,7 +23,12 @@ const Content = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    min-width: 1000px;
+    max-width: 1200px;
+
+    @media screen and (max-width: 1250px) {
+        min-width: 800px;
+    }
 `
 
 const Title = styled.h1`

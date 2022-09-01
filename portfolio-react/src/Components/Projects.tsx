@@ -13,6 +13,15 @@ const Container = styled.div`
     align-items: center;
     padding: 0 15rem;
     padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media screen and (max-width: 800px) {
+        gap: 20px;
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        justify-content: center;
+    }
 `
 
 const Header = styled.div`
@@ -20,6 +29,10 @@ const Header = styled.div`
     font-weight: 700;
     /* border-bottom: 5px solid #42855B; */
     margin-bottom: 60px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 3rem;
+    }
 `
 
 type ProjectObject = {

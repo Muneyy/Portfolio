@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 const Project = styled.div`
     display: flex;
     flex-flow: row wrap;
     position: relative;
     margin: auto;
+
+    @media screen and (max-width: 800px) {
+        justify-content: center;
+    }
 `
 
 const ProjectText = styled.div`
@@ -24,7 +26,14 @@ const ProjectText = styled.div`
     position: absolute;
     z-index: 2;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    @media screen and (max-width: 800px) {
+        position: inherit;
+        max-width: 60%;
+        left: 0;
+    }
 `
+
 
 const ProjectTitle = styled.h1`
     font-size: 2rem;
@@ -40,6 +49,11 @@ const ProjectLinks = styled.div`
     display: flex;
     flex-direction: row;
     gap: 16px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
 `
 
 const ProjectLink = styled.a`
@@ -101,6 +115,14 @@ const ProjectImage = styled.div`
         opacity: 0.6;
         padding: auto;
 
+        @media screen and (max-width: 1250px) {
+            width: 768px;
+        }
+
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+
     }
 `
 
@@ -127,7 +149,7 @@ const ProjectItem = ({title, desc, linkCode, linkLive, imgSrc} : {
                 </ProjectLinks>
             </ProjectText>
             <ProjectImage>
-                <img src={require(`../../Images/${imgSrc}`)}/>
+                <img src={require(`../../Images/${imgSrc}`)} alt="project"/>
             </ProjectImage>
         </Project>
     )

@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { IconContext } from "react-icons";
-import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython, SiLinux } from "react-icons/si";
+import HeaderTechnologies from './SubComponents/HeaderTechnologies';
 
 const HeaderContainer = styled.div`
    background-color: #313132;
@@ -20,66 +19,40 @@ const HeaderName = styled.h2`
     font-weight: 300;
     padding-left: 5px;
     transform: translate(0, 20%);
+
+    @media screen and (max-width: 800px) {
+        font-size:calc(2rem + 1.5vw);
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;
+    }
 `
 
 const HeaderText = styled.h1`
     font-size: 8rem;
     font-weight: 900;
-`
 
+    @media screen and (max-width: 800px) {
+        font-size:calc(3rem + 1.5vw);
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 2.5rem;
+    }
+
+`
 const HeaderTitle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10rem;
-`
 
-const HeaderTechnologies = styled.div`
-    /* border: 3px solid #90B77D; */
-    border-radius: 10px;
-    background-color: #1D1D1F;
-    margin: 0 auto;
-    padding: 50px 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 800px;
-`
-
-const HeaderTechnologiesTitle = styled.h1`
-    font-size: 2.5rem;
-    font-weight: 500;
-`
-
-const HeaderTechnologiesList = styled.ul`
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+    @media screen and (max-width: 800px) {
+        padding-top: 3rem;
     }
-
-    li > span {
-        position: absolute;
-        top: -40%;
-        opacity: 0;
-        transition: 0.3s;
-        font-size: 0.8rem;
-    }
-
-    li:hover > span {
-        opacity: 1;
-        transform: translate(0, -10%);
-    }
+    
 `
-
 
 const Intro = () => {
     return (
@@ -104,53 +77,7 @@ const Intro = () => {
                     animate = { { opacity: 1 } }
                     transition = {{ duration: 0.5 }}
                 >
-                <HeaderTechnologies>
-                    <HeaderTechnologiesTitle>
-                        Technologies
-                    </HeaderTechnologiesTitle>
-                    <HeaderTechnologiesList>
-                            <li>
-                                <span>HTML 5</span>
-                                <SiHtml5 />
-                            </li>
-                            <li>
-                                <span>CSS 3</span>
-                                <SiCss3 />
-                            </li>
-                            <li>
-                                <span>Linux</span>
-                                <SiLinux />
-                            </li>
-                            <li>
-                                <span>GitHub</span>
-                                <SiGithub />
-                            </li>
-                            <li>
-                                <span>Webpack</span>
-                                <SiWebpack />
-                            </li>
-                            <li>
-                                <span>JavaScript</span>
-                                <SiJavascript />
-                            </li>
-                            <li>
-                                <span>TypeScript</span>
-                                <SiTypescript />
-                            </li>
-                            <li>
-                                <span>React</span>
-                                <SiReact />
-                            </li>
-                            <li>
-                                <span>Styled Components</span>
-                                <SiStyledcomponents />
-                            </li>
-                            <li>
-                                <span>Python</span>
-                                <SiPython />
-                            </li>
-                    </HeaderTechnologiesList>
-                </HeaderTechnologies>
+                <HeaderTechnologies />
                 </motion.div>
             </IconContext.Provider>
         </HeaderContainer>
