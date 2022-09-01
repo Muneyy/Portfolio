@@ -19,3 +19,7 @@ code {
 .App {
   background-color: #1d1d1f;
 }
+
+a {
+  text-decoration: none;
+}

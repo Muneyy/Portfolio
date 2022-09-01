@@ -59,7 +59,7 @@ const Nav = () => {
                 <Title>Muney</Title>
                 <Links>
                     <HashLink smooth to="/#home">
-                        <LinkItem>Home</LinkItem>
+                        <LinkItem style={{ textDecoration: 'none' }}>Home</LinkItem>
                     </HashLink>
                     <HashLink smooth to="/#about">
                         <LinkItem>About</LinkItem>
