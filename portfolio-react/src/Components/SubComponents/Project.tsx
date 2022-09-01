@@ -8,6 +8,7 @@ const Project = styled.div`
 
     @media screen and (max-width: 800px) {
         justify-content: center;
+        width: 100%;
     }
 `
 
@@ -52,6 +53,7 @@ const ProjectLinks = styled.div`
 
     @media screen and (max-width: 800px) {
         flex-direction: column;
+        align-self: center;
     }
 
 `
@@ -89,6 +91,7 @@ const ProjectButton = styled.button`
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 0.9rem;
+  width: 100%;
 
     &:focus {
         box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
@@ -113,7 +116,6 @@ const ProjectImage = styled.div`
         height: auto;
         background-size: contain;
         opacity: 0.6;
-        padding: auto;
 
         @media screen and (max-width: 1250px) {
             width: 768px;
@@ -121,9 +123,13 @@ const ProjectImage = styled.div`
 
         @media screen and (max-width: 800px) {
             display: none;
+            position: absolute;
+            padding: 0;
         }
-
     }
+    @media screen and (max-width: 800px) {
+        display: none
+        }
 `
 
 const ProjectItem = ({title, desc, linkCode, linkLive, imgSrc} : {
