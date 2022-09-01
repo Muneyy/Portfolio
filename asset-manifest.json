@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ff8c0771.css",
+    "main.js": "/Portfolio/static/js/main.d6f56cb0.js",
+    "static/js/787.aeca62f9.chunk.js": "/Portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/memory-game.jpg": "/Portfolio/static/media/memory-game.2754117d11e66acc995d.jpg",
+    "static/media/cv-creator.jpg": "/Portfolio/static/media/cv-creator.bfc09c8eb6652b1c2e45.jpg",
+    "static/media/shopping-cart.jpeg": "/Portfolio/static/media/shopping-cart.57c59d4f90839c85c5a8.jpeg",
+    "static/media/todolist.jpeg": "/Portfolio/static/media/todolist.4d128fcf7b871767fae7.jpeg",
+    "index.html": "/Portfolio/index.html",
+    "main.ff8c0771.css.map": "/Portfolio/static/css/main.ff8c0771.css.map",
+    "main.d6f56cb0.js.map": "/Portfolio/static/js/main.d6f56cb0.js.map",
+    "787.aeca62f9.chunk.js.map": "/Portfolio/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff8c0771.css",
+    "static/js/main.d6f56cb0.js"
+  ]
+}
