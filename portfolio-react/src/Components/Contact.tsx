@@ -66,7 +66,7 @@ const Contact = () => {
                     <a href="https://github.com/Muneyy" target="_blank">
                         <SiGithub />
                     </a>
-                    <a href="https://github.com/Muneyy" target="_blank">
+                    <a href="https://linkedin.com/in/kcarl-ivan-martinez-74625524a" target="_blank">
                         <SiLinkedin />
                     </a>
                 </IconContext.Provider>
