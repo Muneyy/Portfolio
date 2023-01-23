@@ -86,10 +86,9 @@ const About = () => {
                     <ContentText>
                         My journey as a web developer started during the summer vacation on June 2022 
                         when I took up the Full Stack curriculum provided by The Odin Project as a hobby. 
-                        I soon discovered a passion for web development and it has been a blast so far!
                     </ContentText>
                     <ContentText>
-                        Take a look at what I have built during these past two and a half months.
+                        Take a look at my projects!
                     </ContentText>
 
                 </Content>
