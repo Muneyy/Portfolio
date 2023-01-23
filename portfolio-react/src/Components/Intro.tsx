@@ -67,7 +67,7 @@ const Intro = () => {
                         ivan martinez
                     </HeaderName>
                     <HeaderText>
-                        FRONT END<br></br>DEVELOPER
+                        FULL STACK<br></br>DEVELOPER
                     </HeaderText>
                 </motion.div>
             </HeaderTitle>
