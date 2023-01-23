@@ -56,7 +56,7 @@ const Nav = () => {
     return (
         <Container>
             <Content>
-                <Title>Muney</Title>
+                <Title>ivan</Title>
                 <Links>
                     <HashLink smooth to="/#home">
                         <LinkItem style={{ textDecoration: 'none' }}>Home</LinkItem>
