@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { IconContext } from "react-icons";
-import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython, SiLinux } from "react-icons/si";
+import { SiTypescript, SiCss3, SiJavascript, SiReact, SiGithub, SiWebpack, SiHtml5, SiStyledcomponents, SiMongodb, SiPython, SiLinux, SiChakraui, SiNodedotjs, SiExpress, SiEslint } from "react-icons/si";
 
 const HeaderTechnologiesContainer = styled.div`
     /* border: 3px solid #90B77D; */
@@ -112,6 +112,18 @@ const HeaderTechnologies = () => {
             </HeaderTechnologiesTitle>
             <HeaderTechnologiesList>
                     <li>
+                        <span>React</span>
+                        <SiReact />
+                    </li>
+                    <li>
+                        <span>Node</span>
+                        <SiNodedotjs />
+                    </li>
+                    <li>
+                        <span>Express</span>
+                        <SiExpress />
+                    </li>
+                    <li>
                         <span>HTML 5</span>
                         <SiHtml5 />
                     </li>
@@ -128,8 +140,8 @@ const HeaderTechnologies = () => {
                         <SiGithub />
                     </li>
                     <li>
-                        <span>Webpack</span>
-                        <SiWebpack />
+                        <span>ESLint</span>
+                        <SiEslint />
                     </li>
                     <li>
                         <span>JavaScript</span>
@@ -140,17 +152,17 @@ const HeaderTechnologies = () => {
                         <SiTypescript />
                     </li>
                     <li>
-                        <span>React</span>
-                        <SiReact />
-                    </li>
-                    <li>
                         <span>Styled Components</span>
                         <SiStyledcomponents />
                     </li>
                     <li>
+                        <span>Chakra UI</span>
+                        <SiChakraui />
+                    </li>
+                    {/* <li>
                         <span>Python</span>
                         <SiPython />
-                    </li>
+                    </li> */}
             </HeaderTechnologiesList>
         </HeaderTechnologiesContainer>
     )
